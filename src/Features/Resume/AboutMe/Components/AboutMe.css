@@ -5,8 +5,25 @@
 }
 
 .about-desc{
+    font-size: 1.25rem;
     font-family: Playwrite, Serif, serif;
     margin: 0 6.25rem;
+}
+
+.view-resume{
+    padding: 0.5rem 1rem;
+    font-family: Playwrite, Serif, serif;
+    border-radius: 0.75rem;
+    color: #355E3B;
+    font-weight: 800;
+    font-size: 0.925rem;
+    cursor: pointer;
+    border: 1px solid #355E3B;
+    background-color: #F1C1B4;
+}
+
+.view-resume:hover{
+    background-color: #ec917f;
 }
 
 @media screen and (max-width: 1040px) {
@@ -23,6 +40,7 @@
     }
     .about-desc{
         margin: 0 3.75rem;
+        font-size: 1.125rem;
     }
 }
 
@@ -35,5 +53,6 @@
 @media screen and (max-width: 388px) {
     .about-desc{
         margin: 0 1.8rem;
+        font-size: 0.925rem;
     }
 }

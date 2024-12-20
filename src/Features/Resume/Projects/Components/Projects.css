@@ -25,3 +25,9 @@
         font-size: 1.4rem;
     }
 }
+
+.proj{
+    visibility: hidden;
+    position: absolute;
+    top: -100px;
+}

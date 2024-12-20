@@ -16,9 +16,11 @@ export default function Card({image,imageAlt,heading,body,list,link,technologies
 
                 <h3 className='project-card-heading'>{heading}</h3>
 
-                <a className='project-card-link' href={link} target='_blank'>Check Out Live here
-                    <img src={Arrow} alt="Slant Arrow"/>
-                </a>
+                {link &&
+                    <a className='project-card-link' href={link} target='_blank'>Check Out Live here
+                        <img src={Arrow} alt="Slant Arrow"/>
+                    </a>
+                }
 
                 <div className='project-card-body'>
                     <p>{body}</p>

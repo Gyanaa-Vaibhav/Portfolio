@@ -71,17 +71,17 @@
 }
 
 .project-card-body li{
-    list-style: none;
+    font-size: 0.9rem;
 }
-.project-card-body ul{
-    margin: 0;
-    padding: 0;
-}
+/*.project-card-body ul{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
 
 .project-card-technologies {
     margin: 1rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
@@ -111,11 +111,11 @@
     }
 
     .project-card-heading {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .project-card-body {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .project-card-link {
@@ -142,11 +142,11 @@
     }
 
     .project-card-heading {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 
     .project-card-body {
-        font-size: 0.85rem;
+        font-size: 1rem;
         margin-top: 1rem;
     }
     .project-card-body p {
@@ -176,10 +176,14 @@
     }
 
     .project-card-heading {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 
     .project-card-body {
+        font-size: 0.925rem;
+    }
+
+    .project-card-body li{
         font-size: 0.8rem;
     }
 
@@ -206,11 +210,11 @@
     }
 
     .project-card-heading {
-        font-size: 0.85rem;
+        font-size: 0.925rem;
     }
 
     .project-card-body {
-        font-size: 0.7rem;
+        font-size: 0.785rem;
     }
 
     .project-card-link {

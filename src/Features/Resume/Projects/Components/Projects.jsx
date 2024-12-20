@@ -3,46 +3,28 @@ import './Projects.css'
 import Card from "../Card/Card.jsx";
 
 
-export default function Projects({title , cardDetails}){
+export default function Projects({id,title , cardDetails}){
 
+    const card = cardDetails.map(d=> <Card
+        key={d.heading}
+        image={d.image}
+        heading={d.heading}
+        link={d.link}
+        list={d.list}
+        body={d.body}
+        technologies={d.technologies}
+    />)
+
+    // TODO ADD Links and Images
     return(
         <>
+        <div style={{position:'relative'}} >
+            <div className='proj' id={id} ></div>
             <h2 className='projects'>{title}</h2>
             <div className='project-section'>
-                <Card
-                    image={'l'}
-                    heading={'Project Heading'}
-                    link={'test'}
-                    list={['Learned this a','Learned this b','Learned this c','Learned this d']}
-                    body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut necessitatibus nesciunt quasi quisquam ratione. Adipisci animi commodi excepturi laudantium, maxime nisi, nulla, officia perferendis possimus quisquam similique velit voluptatibus?'}
-                    technologies={['React','Redis','Node','Express']}
-                />
-
-                <Card
-                    image={'l'}
-                    heading={'Project Heading'}
-                    link={'test'}
-                    list={['Learned this a','Learned this b','Learned this c','Learned this d']}
-                    body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut necessitatibus nesciunt quasi quisquam ratione. Adipisci animi commodi excepturi laudantium, maxime nisi, nulla, officia perferendis possimus quisquam similique velit voluptatibus?'}
-                    technologies={['React','Redis','Node','Express']}
-                />
-                <Card
-                    image={'l'}
-                    heading={'Project Heading'}
-                    link={'test'}
-                    list={['Learned this a','Learned this b','Learned this c','Learned this d']}
-                    body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut necessitatibus nesciunt quasi quisquam ratione. Adipisci animi commodi excepturi laudantium, maxime nisi, nulla, officia perferendis possimus quisquam similique velit voluptatibus?'}
-                    technologies={['React','Redis','Node','Express']}
-                />
-                <Card
-                    image={'l'}
-                    heading={'Project Heading'}
-                    link={'test'}
-                    list={['Learned this a','Learned this b','Learned this c','Learned this d']}
-                    body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut necessitatibus nesciunt quasi quisquam ratione. Adipisci animi commodi excepturi laudantium, maxime nisi, nulla, officia perferendis possimus quisquam similique velit voluptatibus?'}
-                    technologies={['React','Redis','Node','Express']}
-                />
+                {card}
             </div>
+        </div>
         </>
     )
 }

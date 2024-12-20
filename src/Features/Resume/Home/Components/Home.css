@@ -48,7 +48,7 @@ body{
 
 .downArrow{
     position: absolute;
-    bottom: 20px;
+    bottom: 70px;
     cursor: pointer;
     animation: bounce 2s infinite;
 }
@@ -86,7 +86,7 @@ body{
         margin: 0 2rem;
     }
     .hi, .title{
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
     .name{
         font-size: 2.5rem;
@@ -101,7 +101,7 @@ body{
         margin: 0 1.8rem;
     }
     .hi, .title{
-        font-size: 0.825rem;
+        font-size: 0.925rem;
     }
     .name{
         font-size: 2rem;

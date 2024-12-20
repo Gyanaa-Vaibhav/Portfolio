@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   build:{
-    outDir: '/var/www/html/Portfolio',
+    outDir: '/var/www/html/resume',
     emptyOutDir: true,
   },
   server:{
