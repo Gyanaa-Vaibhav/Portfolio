@@ -1,6 +1,8 @@
 .project-card{
     gap: 1.25rem;
     display: flex;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
     border-radius: 16px;
     align-items: center;
     margin: 0 100px 50px;
@@ -20,8 +22,12 @@
     color: #888;
 }
 
+/*#upcomingProjects .project-card{*/
+/*    grid-template-columns: 1fr;*/
+/*}*/
 
 .project-card-container{
+    grid-column: 2/-1;
     display: flex;
     flex-direction: column;
 }
@@ -210,7 +216,7 @@
     }
 
     .project-card-heading {
-        font-size: 0.925rem;
+        font-size: 1rem;
     }
 
     .project-card-body {

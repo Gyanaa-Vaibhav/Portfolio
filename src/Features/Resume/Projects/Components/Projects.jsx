@@ -21,7 +21,7 @@ export default function Projects({id,title , cardDetails}){
         <div style={{position:'relative'}} >
             <div className='proj' id={id} ></div>
             <h2 className='projects'>{title}</h2>
-            <div className='project-section'>
+            <div id={id} className='project-section'>
                 {card}
             </div>
         </div>
