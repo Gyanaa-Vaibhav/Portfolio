@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './Card.css'
 import Arrow from '/svg/Arrow.svg'
 
@@ -8,6 +8,7 @@ export default function Card({image,imageAlt,heading,body,list,link,technologies
     const [showImage, setShowImage] = React.useState(false);
     const [imageUrl, setImageUrl] = React.useState('');
     const [scrollDirection, setScrollDirection] = React.useState(310);
+    const [imageAvailable, setImageAvailable] = React.useState(false);
 
     const tech = technologies.map(t => <p key={t} className='project-technologies'>{t}</p>)
     const points = list.map(i => <li key={i}> {i} </li> )
@@ -28,6 +29,11 @@ export default function Card({image,imageAlt,heading,body,list,link,technologies
             current.scrollBy({ left: scrollDirection, behavior: "smooth" });
         }
     };
+
+    useEffect(() => {
+        if(img)
+        setImageAvailable(true);
+    },[])
 
     const img = image.image?.map((d, i) => {
         return (
@@ -56,6 +62,7 @@ export default function Card({image,imageAlt,heading,body,list,link,technologies
             )}
         <div className='project-card'>
 
+            {imageAvailable &&
             <div className='image-wrapper'>
                 <p className='scroll-right' onClick={() => scroll('left')}>&#9664;</p>
                 <div ref={scrollContainer} className='image-container'>
@@ -63,6 +70,7 @@ export default function Card({image,imageAlt,heading,body,list,link,technologies
                 </div>
                 <p className='scroll-left' onClick={() => scroll('right')}>&#9654;</p>
             </div>
+            }
 
             <div className='project-card-container'>
 

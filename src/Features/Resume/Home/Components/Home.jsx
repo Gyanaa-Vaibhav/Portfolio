@@ -12,7 +12,15 @@ export default function Home(){
                 <p className='name'>Gyanaa Vaibhav</p>
                 <p className='title'>A Full Stack Developer with expertise in UI/UX Design. <br/>
                     I build websites to Solve Problems and Make an Impact to the World.</p>
-                <button style={{marginTop:'1.25rem'}} className='view-resume'>View Resume</button>
+                <a
+                    href="/Gyanaa_Vaibhav_Resume.pdf"
+                    download="Gyanaa_Vaibhav_Resume.pdf"
+                    style={{textDecoration: 'none'}}
+                >
+                    <button style={{marginTop: '1.25rem'}} className="view-resume">
+                        View Resume
+                    </button>
+                </a>
                 <img
                     className='downArrow'
                     src={downArrow}
