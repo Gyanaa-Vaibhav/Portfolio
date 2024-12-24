@@ -14,6 +14,10 @@
     margin-bottom: 4rem;
 }
 
+#upcomingProjects .project-card-body{
+    margin: 0;
+}
+
 
 @media screen and (max-width: 1040px) {
     .projects{

@@ -1,8 +1,11 @@
+@font-face {
+    font-family: 'JetBrainsMono Regular';
+    src: url("/fonts/JetBrainsMono-Regular.ttf");
+}
+
 .project-card{
-    gap: 1.25rem;
+    gap: 2rem;
     display: flex;
-    /*display: grid;*/
-    /*grid-template-columns: 1fr 1fr 1fr;*/
     border-radius: 16px;
     align-items: center;
     margin: 0 100px 50px;
@@ -21,10 +24,6 @@
     font-size: 1rem;
     color: #888;
 }
-
-/*#upcomingProjects .project-card{*/
-/*    grid-template-columns: 1fr;*/
-/*}*/
 
 .project-card-container{
     grid-column: 2/-1;
@@ -70,19 +69,17 @@
 }
 
 .project-card-body{
-    font-family: Playwrite, Serif, serif;
-    line-height: 160%;
+    font-family: 'JetBrainsMono Regular', Serif, serif;
+    line-height: 150%;
     margin: 1rem 0;
+    font-size: 1.125rem;
     text-align: left;
 }
 
 .project-card-body li{
-    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
-/*.project-card-body ul{*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*}*/
 
 .project-card-technologies {
     margin: 1rem 0;

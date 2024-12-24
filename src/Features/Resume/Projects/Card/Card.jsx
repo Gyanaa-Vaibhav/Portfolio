@@ -7,7 +7,7 @@ export default function Card({image,imageAlt,heading,body,list,link,technologies
     const scrollContainer = React.useRef(null);
     const [showImage, setShowImage] = React.useState(false);
     const [imageUrl, setImageUrl] = React.useState('');
-    const [scrollDirection, setScrollDirection] = React.useState(310);
+    const [scrollDirection, setScrollDirection] = React.useState(460);
     const [imageAvailable, setImageAvailable] = React.useState(false);
 
     const tech = technologies.map(t => <p key={t} className='project-technologies'>{t}</p>)
@@ -17,7 +17,7 @@ export default function Card({image,imageAlt,heading,body,list,link,technologies
         if(window.innerWidth <= 768){
             setScrollDirection(260)
         }else if(window.innerWidth > 769){
-            setScrollDirection(310)
+            setScrollDirection(460)
         }
     },[window.innerWidth])
 

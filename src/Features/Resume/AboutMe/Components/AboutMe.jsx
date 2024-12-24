@@ -18,12 +18,21 @@ export default function AboutMe(){
                         user-friendly web applications.
                     </p>
                     <p>
-                        My interest in computers reached its zenith when I was twelve years old. I commenced learning to code when I was sixteen, and my first programming language was Python.
-                        Although I did learn Python, life’s ups and downs compelled me to abandon it due to academic reasons, as is the case in India. However, my passion for programming endured, and I am currently engaged in creating websites for both recreational and professional purposes.
+                        My interest in computers reached its zenith when I was twelve years old. I commenced learning to
+                        code when I was sixteen, and my first programming language was Python.
+                        Although I did learn Python, life’s ups and downs compelled me to abandon it due to academic
+                        reasons, as is the case in India. However, my passion for programming endured, and I am
+                        currently engaged in creating websites for both recreational and professional purposes.
                     </p>
-                    <button className='view-resume'>View Resume</button>
+                    <a
+                        href="/Gyanaa_Vaibhav_Resume.pdf"
+                        download="Gyanaa_Vaibhav_Resume.pdf"
+                        style={{textDecoration: 'none'}}
+                    >
+                        <button className='view-resume'>View Resume</button>
+                    </a>
                 </div>
             </div>
         </>
-    )
+)
 }
