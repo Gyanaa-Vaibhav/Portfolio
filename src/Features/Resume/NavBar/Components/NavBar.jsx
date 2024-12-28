@@ -31,7 +31,8 @@ const NavBar = () => {
             <ul className="nav-items">
                 <li className="nav-item" onClick={() => scrollTo("home")}>Home</li>
                 <li className="nav-item"  onClick={() => scrollTo('projects')} >Projects</li>
-                <li className="nav-item"  onClick={() => scrollTo('upcomingProjects')} >Upcoming Projects</li>
+                <li className="nav-item"  onClick={() => scrollTo('experience')} >Experience</li>
+                {/*<li className="nav-item"  onClick={() => scrollTo('upcomingProjects')} >Upcoming Projects</li>*/}
                 <li className="nav-item"  onClick={() => scrollTo('aboutMe')}>About</li>
                 <li className="nav-item" onClick={() => scrollTo('contactMe')} >Contact</li>
             </ul>
