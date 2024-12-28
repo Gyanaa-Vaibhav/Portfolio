@@ -27,7 +27,7 @@ export default function Home(){
                     alt="Down Arrow"
                     onClick={() => {
                         window.scrollTo({
-                            top: window.innerHeight,
+                            top: window.innerHeight * 0.94,
                             behavior: "smooth",
                         });
                     }}
