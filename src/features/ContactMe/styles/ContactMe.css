@@ -1,0 +1,145 @@
+/* Styles for ContactMe */
+@font-face {
+    font-family: "KyivTypeSans Normal";
+    src: url("/fonts/KyivTypeSans-Medium.ttf");
+}
+
+.contactMe{
+    position: "relative"
+}
+
+.contact-section {
+    font-family: "KyivTypeSans Normal", sans-serif;
+    margin: 4rem 6.25rem;
+    text-align: left;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-family : "KyivTypeSans Medium",sans-serif;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.25rem;
+    margin: .25rem 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-family: "KyivTypeSans Normal", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-details {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-details a {
+    color: #fb9888;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: #f15840;
+}
+
+.contact-details p{
+    margin: .5rem 0;
+    color: #355E3B;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    color: #fb9888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f15840;
+}
+
+@media screen and (max-width: 1040px) {
+    .contact-section h2{
+        font-size: 1.8rem;
+    }
+    .contact-section{
+        margin: 4rem 6.25rem;
+    }
+    .contact-section p, .social-links a {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media screen and (max-width: 886px) {
+    .contact-section h2{
+        font-size: 1.5rem;
+    }
+    .contact-section{
+        margin: 4rem 3.75rem;
+    }
+    .contact-section p, .social-links a {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .contact-section h2{
+        font-size: 1.4rem;
+    }
+    .contact-section{
+        margin: 4rem 2rem;
+    }
+    .contact-section p, .social-links a {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .contact-section{
+        margin: 4rem 1.8rem;
+        font-size: 0.925rem;
+    }
+    .contact-section p, .social-links a {
+        font-size: 0.925rem;
+    }
+}
