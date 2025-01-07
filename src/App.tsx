@@ -14,6 +14,9 @@ import message1 from '/images/message_inc_1.png?url'
 import message2 from '/images/message_inc_2.png?url'
 import message3 from '/images/message_inc_3.png?url'
 import message4 from '/images/message_inc_4.png?url'
+import stock1 from '/images/stock_predictor_1.png?url'
+import stock2 from '/images/stock_predictor_2.png?url'
+import stock3 from '/images/stock_predictor_3.png?url'
 
 // import movie1 from '/images/movie_watchlist_1.png?url'
 // import movie2 from '/images/movie_watchlist_2.png?url'
@@ -49,7 +52,7 @@ function App() {
             technologies: ['React', 'Node.js', 'Express.js', 'Redis', 'WebSocket', 'PostgresSQL', 'Socket.IO'],
           },
           {
-            image: { image: [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5], imageAlt:'Alt' },
+            image: { image: [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5], imageAlt:'Pokemon Game Images' },
             heading: 'Pokémon Memory Game',
             link: 'https://pokemon.gyanaavaibhav.in',
             list: [
@@ -63,6 +66,18 @@ function App() {
                         difficulty levels and customizable sound effects. Fully optimized for responsiveness and user engagement`,
             technologies: ['React', 'JavaScript', 'CSS', 'PokéAPI', 'ContextAPI', 'GraphQL']
           },
+          {
+            image: { image: [stock1, stock2, stock3], imageAlt:'Stock Predicor Images' },
+            heading: 'Stock Price Predictor',
+            link:'https://stockpredictor.gyanaavaibhav.in/',
+            body: `Added the ability to input stock tickers and fetch real-time data from Polygon.io. Integrated OpenAI to generate concise stock performance predictions. Built a user-friendly React interface with interactive controls, animations, and responsive design. Leveraged TypeScript for type safety and maintainable codebase.`,
+              list:[
+                  'Enhanced API integration skills with external services like OpenAI and Polygon.io.',
+                  'Improved backend skills with asynchronous data fetching and error handling.',
+                  'Strengthened frontend expertise by creating modular, interactive UI components.'
+              ],
+              technologies:['TypeScript', 'CSS', 'Node.js', 'Express.js', 'OpenAI API', 'Polygon.io API']
+          }
         ]} />
       <ContactMe />
     </>
