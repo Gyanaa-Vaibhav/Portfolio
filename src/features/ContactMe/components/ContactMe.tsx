@@ -25,7 +25,7 @@ const ContactMe = () => {
 
                     {/* Contact Details */}
                     <div className="contact-details">
-                        <p>Email: <a href="mailto:gynanrudr0@gmail.com">gyanarudr0@gmail.com</a></p>
+                        <p>Email: <a href="mailto:gynanrudr0@gmail.com">gynanrudr0@gmail.com</a></p>
                         <p>Phone: <a href="tel:+919380034009">+91 93800 34009</a></p>
                         <p>Location: Karnataka, India</p>
                     </div>
