@@ -9,7 +9,7 @@ const Experience = () => {
                 <div className="experience-desc">
                     <div className='work-exp'>
                         <p>Freelance Full Stack Developer • Full-Time</p>
-                        <p>July 2023 - Present • 1yr 6mos</p>
+                        <p>July 2023 - Jan 2024 • 1yr 6mos</p>
                         <p>India Remote</p>
                     </ div>
                     <div className='skill-l work-exp'>
@@ -28,7 +28,7 @@ const Experience = () => {
                     </div>
                     <div className="skill-l work-exp">
                         <ul>
-                            <li>Basic Python and Frameworks, Django.</li>
+                            <li>Studied Django and Full Stack Concepts.</li>
                             <li>Learned about Full Stack Development.</li>
                             <li>WordPress and Tailwind CSS.</li>
                             <li>Used to Manage Data using SQLite.</li>
