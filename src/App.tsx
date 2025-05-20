@@ -17,6 +17,9 @@ import message4 from '/images/message_inc_4.png?url'
 import stock1 from '/images/stock_predictor_1.png?url'
 import stock2 from '/images/stock_predictor_2.png?url'
 import stock3 from '/images/stock_predictor_3.png?url'
+import ipWho1 from '/images/ipWho_1.png?url'
+import ipWho2 from '/images/ipWho_2.png?url'
+import ipWho3 from '/images/ipWho_3.png?url'
 
 // import movie1 from '/images/movie_watchlist_1.png?url'
 // import movie2 from '/images/movie_watchlist_2.png?url'
@@ -35,6 +38,19 @@ function App() {
       <Experience />
       <Projects id={'projects'} title={'Projects'} cardDetails={
         [
+          {
+            image: { image: [ipWho1,ipWho2,ipWho3], imageAlt:'ipWho Images' },
+            heading: 'ipWho.org - Free IP Geolocation API',
+            link: 'https://ipwho.org',
+            list: [
+              'Open-source and fully self-hostable – designed for developers needing scalable IP resolution in their apps.',
+              'Developed with Node.js, Express, and TypeScript, deployed on a VPS using NGINX.',
+              'Utilized Redis caching to reduce latency and backend load significantly.',
+              'Logs, rate limiting, and fail-over logic built-in for production readiness.',
+            ],
+            body: `A high-performance, open-source IP geolocation API capable of handling 200K+ requests/min with zero-auth access. Built for developers, the system is fully self-hostable and optimized for speed, scale, and ease of use.`,
+            technologies: ['React', 'Node.js', 'Express.js', 'Redis','NGINX'],
+          },
           {
             image: { image: [message1, message2, message3, message4], imageAlt:'Message App Image' },
             heading: 'Message App',
